@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compliment_app</title>
+</head>
+<body>
+    <h1>Share Compliments</h1>
+    <form action="{{ url_for('create') }}" method="post" >
+        <label for="message">褒め言葉</label>
+        <input type="text" class="text" name="message" required>
+        <input type="submit" class="submit" value="寄付する">
+    </form>
+</body>
+</html>

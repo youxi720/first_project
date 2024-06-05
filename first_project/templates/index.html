@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compliment_app</title>
+</head>
+<body>
+    <footer>
+        <h1 class="site-name">褒め言葉共有サイト</h1>
+    </footer>
+    <main>
+    <h1 id="title">Share Compliments</h1>
+    {% if compliment %}
+    <p>{{ compliment.message }}</p>
+    <a class="donate" href="/create.html" type="bottum">donate Compliments</a>
+    <a class="delete" href="{{ url_for('delete', compliment_id=compliment.id) }}">Delete</a>
+    {% else %}
+    <p>お疲れ様！<br>自分への褒め言葉を寄付してね</p>
+    <a class="donate" href="/create.html" type="buttom">donate Compliments</a>
+    {% endif %}
+    </main>
+</body>
+</html>
