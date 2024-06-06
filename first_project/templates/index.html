@@ -14,7 +14,7 @@
     <h1 id="title">Share Compliments</h1>
     {% if compliment %}
     <p>{{ compliment.message }}</p>
-    <a class="donate" href="/create.html" type="bottum">寄付する</a>
+    <a class="donate" href="/create.html" type="buttom">寄付する</a>
     <a class="delete" href="{{ url_for('delete', compliment_id=compliment.id) }}">削除する</a>
     {% else %}
     <p>お疲れ様！<br>自分への褒め言葉を寄付してね</p>
