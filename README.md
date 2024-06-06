@@ -4,7 +4,7 @@
 
 <h2>使用言語</h2>
 <ul>
-  <li>Flask</li>
+  <li>Flask(Python)</li>
   <li>HTML, CSS</li>
   <li>Sqlite3</li>
 </ul>
